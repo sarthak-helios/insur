@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logo.png.png" />
+    <title>Insur - WebPage</title>
+
+    <!-- CSS Styles, Icons and fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="">
+    <!-- Header -->
+    <header class="p-0 h-fit sticky -top-10 z-[5000]">
+      <!-- topbar -->
+      <div
+        class="h-10 flex items-center text-xs text-slate-400 bg-custom-purple2"
+      >
+        <div
+          class="relative bg-custom-dark w-full h-full flex items-center justify-end mx-auto px-10 py-2 after:content-[''] after:bg-[#25253a] after:h-full after:w-8 after:absolute after:bottom-0 after:skew-x-28 after:-right-5 after:rounded-tr-xl"
+        >
+          <div class="inline-flex gap-6 mx-auto">
+            <p class="cursor-pointer">
+              <i class="bi bi-geo-alt-fill text-custom-purple mr-1"></i>30
+              Commercial Road Fratton, Australia
+            </p>
+            <p class="cursor-pointer">
+              <i class="bi bi-envelope-fill text-custom-purple mr-1"></i
+              >needhelp@company.com
+            </p>
+          </div>
+          <div class="flex gap-4 text-white">
+            <i class="bi bi-facebook cursor-pointer"></i>
+            <i class="bi bi-twitter cursor-pointer"></i>
+            <i class="bi bi-pinterest cursor-pointer"></i>
+            <i class="bi bi-youtube cursor-pointer"></i>
+          </div>
+        </div>
+        <div class="h-full w-72 flex px-16 justify-end items-center">
+          <button
+            class="bg-gray-200 text-slate-800 font-semibold px-3 py-1.5 rounded-md hover:bg-gray-600 hover:text-gray-200 cursor-pointer"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+      <!-- navigation -->
+      <nav class="bg-white flex h-fit">
+        <div
+          class="flex justify-start items-center px-16 bg-custom-purple gap-32 relative w-full h-full flex items-center justify-end mx-auto after:content-[''] after:bg-[#6c6af1] after:h-full after:w-16 after:absolute after:bottom-0 after:skew-x-28 after:-right-9 after:rounded-tr-xl"
+        >
+          <!-- logo div -->
+          <div
+            class="h-fit py-7 ml-16 flex items-center relative bg-white custom-shadow"
+          >
+            <img
+              src="./assets/images/logo.png.png"
+              class="z-40 max-h-8 min-h-6 min-w-32 w-32"
+              alt=""
+            />
+          </div>
+          <!-- middle bar in nav -->
+          <div
+            class="flex w-full justify-between items-center text-sm text-gray-300"
+          >
+            <div class="flex gap-8">
+              <a href="">Home</a><a href="">About</a><a href="">Services</a
+              ><a href="">Testimonials</a><a href="">Team</a><a href="">Blog</a>
+            </div>
+            <div class="flex gap-6 text-lg -mr-16 z-10">
+              <i class="bi bi-search"></i><i class="bi bi-cart3"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-16 w-fit h-full flex items-center gap-4 my-auto justify-center"
+        >
+          <button
+            class="bg-custom-purple px-3 py-2 text-center align-bottom rounded-full text-white cursor-pointer"
+          >
+            <i class="bi bi-telephone-fill text-sm"></i>
+          </button>
+          <div class="">
+            <p class="text-xs text-gray-600 text-nowrap">Emergency call</p>
+            <p class="text-lg font-semibold text-custom-dark text-nowrap">
+              +92 3800 8060
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section>
+      <div class="flex items-center gap-8 hero max-h-[50%]">
+        <div class="relative pl-96 flex flex-col gap-8 h-full w-1/2">
+          <h1 class="text-slate-800 text-6xl font-bold">
+            Life More Relaxed with Smart Insurance
+          </h1>
+          <p class="text-gray-500 font-semibold">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+            aut excepturi error iure deleniti illum dolorem?
+          </p>
+          <button
+            class="focus:outline-none text-white bg-custom-purple hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-light rounded-lg text-sm px-8 py-3 mb-2 w-fit cursor-pointer"
+          >
+            Discover More
+          </button>
+          <img
+            src="./assets/images/slider-8-shape-1.png.png"
+            class="h-48 w-48 absolute -bottom-36 right-0"
+            alt=""
+          />
+        </div>
+        <!-- images div -->
+        <div class="relative w-1/2 h-[90vh]">
+          <img
+            src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/hero-banner-2x.jpeg&w=3840&q=75"
+            alt=""
+            class="w-full h-full object-cover object-bottom"
+          />
+          <img
+            src="./assets/images/Image.png"
+            alt=""
+            class="absolute -bottom-8 right-0"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- services show section -->
+    <section class="bg-custom-dark w-full h-[28rem] mt-2 pt-48">
+      <div class="container flex gap-6 justify-center items-center">
+        <div
+          class="flex flex-col gap-6 w-1/3 bg-white border border-gray-300 p-10 text-custom-dark rounded-2xl shadow-lg"
+        >
+          <i class="bi bi-piggy-bank text-custom-purple text-6xl"></i>
+          <h2 class="text-2xl font-semibold">Save Your Money</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+            laudantium vel non.
+          </p>
+        </div>
+        <div
+          class="flex flex-col z-20 gap-6 w-1/3 bg-[url('https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/hero-banner-2x.jpeg&w=3840&q=75')] bg-contain p-10 text-white rounded-2xl scale-125 shadow-lg before:content-[''] before:bg-[#6c6af1cc] before:h-full before:w-full before:absolute before:bottom-0 before:left-0 before:-z-10 before:rounded-2xl"
+        >
+          <i class="bi bi-coin text-6xl"></i>
+          <h2 class="text-2xl font-semibold">Get Free Quote</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nemo
+            in sed eius dolor!
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-6 w-1/3 bg-white border border-gray-300 p-10 text-custom-dark rounded-2xl shadow-lg"
+        >
+          <i class="bi bi-bank text-6xl text-custom-purple"></i>
+          <h2 class="text-2xl font-semibold">Fast & Reliable</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, esse
+            quae.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+    <section class="min-h-svh bg-white flex justify-center items-center">
+      <div class="container flex gap-22 justify-center items-center">
+        <!-- left images section -->
+        <div class="relative rotate-10 mt-16 w-1/2">
+          <img
+            src="https://images.unsplash.com/photo-1462536943532-57a629f6cc60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3"
+            class="w-[30rem] h-[30rem] rounded-2xl object-cover object-center"
+            alt=""
+          />
+          <img
+            src="https://tinypng.com/static/images/boat.png"
+            alt=""
+            class="w-[22rem] h-[22rem] rounded-2xl object-cover object-center absolute bottom-10 left-46"
+          />
+          <div
+            class="bg-custom-purple rounded-2xl text-center p-12 text-white text-2xl w-42 mt-4"
+          >
+            40+ <span class="block text-sm">Years Of Experience</span>
+          </div>
+        </div>
+        <!-- right side details section -->
+        <div class="w-1/2 flex flex-col gap-4">
+          <p class="text-gray-500 font-semibold">
+            <i class="bi bi-shield-fill-check text-custom-purple"></i> About Us
+          </p>
+          <h1 class="text-slate-800 text-4xl font-bold">
+            We're Providing Best Insurance Policy's
+          </h1>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+            sequi veritatis cumque aliquid aperiam optio tempore nisi,
+            voluptatum beatae hic a facilis fugiat ipsum harum recusandae? Porro
+            atque sunt natus?
+          </p>
+          <div class="flex mt-4">
+            <div class="w-1/2 border-r border-violet-300">
+              <div class="flex gap-4">
+                <i class="bi bi-clock-history text-5xl text-custom-purple"></i>
+                <h1 class="text-xl font-semibold">Fast & Easy Process</h1>
+              </div>
+              <p class="mt-4 text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="w-1/2 pl-8">
+              <div class="flex gap-4">
+                <i
+                  class="bi bi-clipboard-minus text-5xl text-custom-purple"
+                ></i>
+                <h1 class="text-xl font-semibold">Control Over Policy</h1>
+              </div>
+              <p class="mt-4 text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <ul class="p-10 border border-violet-300 rounded-2xl mt-4">
+            <li>
+              <i class="bi bi-check-circle-fill text-custom-purple mr-4"></i>
+              Lorem ipsum dolor sit amet consectetur.
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-check-circle-fill text-custom-purple mr-4"></i>
+              Lorem ipsum dolor sit amet consectetur.
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-check-circle-fill text-custom-purple mr-4"></i>
+              Lorem ipsum dolor sit amet consectetur.
+            </li>
+          </ul>
+          <button
+            class="focus:outline-none text-white bg-custom-dark hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-light rounded-lg text-sm px-8 py-3 mb-2 w-fit cursor-pointer"
+          >
+            Discover More
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Services section -->
+    <section
+      class="bg-[url('https://static.vecteezy.com/system/resources/previews/006/852/762/non_2x/white-paper-circles-with-shadows-on-white-background-abstract-template-for-business-presentation-with-note-spaces-free-vector.jpg')] relative w-full pt-28 h-auto bg-center bg-no-repeat bg-cover flex items-center mb-36"
+    >
+      <div class="flex flex-col h-auto gap-8 container">
+        <!-- heading text -->
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-gray-500 font-semibold">
+              <i class="bi bi-shield-fill-check text-custom-purple"></i>
+              Services
+            </p>
+            <h1 class="text-slate-800 text-4xl font-bold text-wrap">
+              We're All the Insurance Services Files
+            </h1>
+          </div>
+          <!-- buttons group -->
+          <div>
+            <button
+              class="text-3xl p-3 pb-2 bg-white text-align-bottom rounded-full cursor-pointer hover:bg-slate-900 hover:text-gray-300"
+            >
+              <i class="bi bi-caret-left"></i>
+            </button>
+            <button
+              class="text-3xl p-3 pb-2 bg-white text-align-bottom rounded-full cursor-pointer hover:bg-slate-900 hover:text-gray-300"
+            >
+              <i class="bi bi-caret-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- progress bar -->
+        <div class="w-full bg-violet-300 rounded-xs h-1">
+          <div class="bg-custom-purple h-1 rounded-xs w-1/3"></div>
+        </div>
+        <!-- cards -->
+        <div class="flex justify-evenly mt-16 gap-6">
+          <div
+            class="relative flex flex-col p-12 rounded-xl bg-white max-w-96 shadow-2xl"
+          >
+            <img
+              src="./assets/images/Mask Group.png"
+              alt=""
+              class="absolute bottom-0 right-0"
+            />
+            <img
+              src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+              class="h-44 w-full rounded-xl object-cover -mt-22 z-10"
+            />
+            <div class="min-h-28 flex py-6 -mt-8 items-center">
+              <i
+                class="bi bi-car-front bg-custom-purple h-full rounded-bl-2xl flex items-center text-white text-4xl px-3 pt-2"
+              ></i>
+              <div
+                class="h-full w-full flex items-center align-baseline border-b border-custom-purple pt-2 pl-3"
+              >
+                <h2>Car Insurance</h2>
+              </div>
+            </div>
+            <p class="text-gray-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+              necessitatibus placeat quae.
+            </p>
+          </div>
+          <div
+            class="relative flex flex-col p-12 rounded-xl bg-white max-w-96 shadow-2xl"
+          >
+            <img
+              src="./assets/images/Mask Group.png"
+              alt=""
+              class="absolute bottom-0 right-0"
+            />
+            <img
+              src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+              class="h-44 w-full rounded-xl object-cover -mt-22 z-10"
+            />
+            <div class="min-h-28 flex py-6 -mt-8 items-center">
+              <i
+                class="bi bi-car-front bg-custom-purple h-full rounded-bl-2xl flex items-center text-white text-4xl px-3 pt-2"
+              ></i>
+              <div
+                class="h-full w-full flex items-center align-baseline border-b border-custom-purple pt-2 pl-3"
+              >
+                <h2>Bike Insurance</h2>
+              </div>
+            </div>
+            <p class="text-gray-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+              necessitatibus placeat quae.
+            </p>
+          </div>
+          <div
+            class="relative flex flex-col p-12 rounded-xl bg-white max-w-96 shadow-2xl"
+          >
+            <img
+              src="./assets/images/Mask Group.png"
+              alt=""
+              class="absolute bottom-0 right-0"
+            />
+            <img
+              src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+              class="h-44 w-full rounded-xl object-cover -mt-22 z-10"
+            />
+            <div class="min-h-28 flex py-6 -mt-8 items-center">
+              <i
+                class="bi bi-car-front bg-custom-purple h-full rounded-bl-2xl flex items-center text-white text-4xl px-3 pt-2"
+              ></i>
+              <div
+                class="h-full w-full flex items-center align-baseline border-b border-custom-purple pt-2 pl-3"
+              >
+                <h2>Car Insurance</h2>
+              </div>
+            </div>
+            <p class="text-gray-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+              necessitatibus placeat quae.
+            </p>
+          </div>
+        </div>
+        <div
+          class="container relative translate-y-1/2 bg-custom-purple w-full rounded-lg"
+        >
+          <div class="relative flex justify-between items-center p-8">
+            <img
+              src="./assets/images/cta-7-1.png.png"
+              alt=""
+              class="-mt-20 w-52"
+            />
+            <div>
+              <p class="text-gray-300 text-xs">Be Happy to Get Insurance</p>
+              <h4 class="text-white text-xl font-semibold">
+                Start Tracking Your Claims
+              </h4>
+            </div>
+            <button
+              class="focus:outline-none z-10 text-custom-dark bg-white hover:bg-gray-300 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-8 py-3 mb-2 w-fit h-fit cursor-pointer"
+            >
+              Discover More
+            </button>
+          </div>
+          <div
+            class="absolute right-0 bottom-0 h-full w-48 bg-custom-dark rounded-r-lg"
+          >
+            <div class="h-full w-28 bg-custom-purple skew-x-35 -ml-12"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why choose us section -->
+    <section class="bg-gray-800 py-28 relative overflow-hidden" id="canvasP">
+      <canvas id="canvas" class="absolute w-full top-0 left-0 opacity-10 z-0">
+        Canvas not supported</canvas
+      >
+      <div class="flex container justify-between items-center">
+        <div class="w-1/2 flex flex-col gap-8">
+          <div class="z-20">
+            <p class="text-gray-500 font-semibold">
+              <i class="bi bi-shield-fill-check text-custom-purple"></i>
+              Why Choose Us
+            </p>
+            <h1 class="text-slate-200 text-4xl font-bold text-wrap">
+              Why You should Choose Our Insurance Policy's
+            </h1>
+          </div>
+          <p class="text-gray-400 text-sm z-50">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium, debitis quis. Neque, corrupti deserunt accusamus, alias
+            consequuntur nostrum dolores voluptas quisquam dolor esse quidem
+            asperiores error, beatae porro. Totam, assumenda.
+          </p>
+          <div class="relative z-20 w-full">
+            <div
+              class="flex flex-col gap-6 p-6 justify-center w-full slanted-edge rounded-2xl"
+            >
+              <div class="flex gap-6">
+                <i
+                  class="bi bi-android2 text-3xl text-white bg-custom-purple p-3 pb-2 rounded-full"
+                ></i>
+                <h4 class="text-xl w-36 text-white text-wrap">
+                  Save Your Money
+                </h4>
+              </div>
+              <p class="text-gray-400 w-72 text-wrap">
+                Lorem ipsum dolor sit amet dolor adipisicing ipsum.
+              </p>
+            </div>
+            <img
+              src="https://images.pexels.com/photos/697259/pexels-photo-697259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+              class="absolute h-full top-0 -right-1/6 object-cover object-center rounded-2xl slanted-edge2 z-240"
+            />
+          </div>
+          <div class="flex items-center gap-6">
+            <button
+              class="focus:outline-none text-custom-dark bg-white hover:bg-purple-200 mt-2 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-8 py-3 mb-2 w-fit cursor-pointer z-20"
+            >
+              Discover More
+            </button>
+            <h1 class="text-5xl z-10 text-white font-semibold">30K</h1>
+            <p class="text-xs text-gray-400 z-10 w-12 text-wrap">
+              Satisfied Customer
+            </p>
+          </div>
+        </div>
+        <!-- image banner -->
+        <div class="w-1/2 z-20">
+          <img
+            src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="absolute top-0 right-0 w-1/2 min-h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials section -->
+    <section class="py-28 bg-gray-200">
+      <div
+        class="container flex flex-col gap-16 justify-center items-center text-center"
+      >
+        <div>
+          <p class="text-gray-500 font-semibold">
+            <i class="bi bi-shield-fill-check text-custom-purple"></i>
+            Testimonial
+          </p>
+          <h1 class="text-slate-900 text-4xl max-w-[35rem] font-bold text-wrap">
+            See What they are Talking About?
+          </h1>
+        </div>
+        <div class="flex justify-between gap-8">
+          <div
+            class="p-8 pt-4 rounded-3xl bg-white shadow-xl max-w-1/2 flex flex-col gap-6 relative"
+          >
+            <img
+              src="./assets/images/Image2.png"
+              alt=""
+              class="absolute bottom-0 right-0"
+            />
+            <div class="flex gap-6">
+              <img
+                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="rounded-t-lg w-20 h-20 object-cover object-top -mt-10"
+                alt=""
+              />
+              <div class="text-start">
+                <h2 class="font-bold text-sm">Anwar Maqsud</h2>
+                <p class="text-xs text-gray-400">Marketing Manager</p>
+              </div>
+            </div>
+            <p class="text-start">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea esse
+              quidem voluptatem ab officiis dolorum neque soluta reprehenderit
+              vitae blanditiis?
+            </p>
+            <p class="text-custom-purple text-start">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </p>
+          </div>
+          <div
+            class="p-8 pt-4 rounded-3xl bg-white shadow-xl max-w-1/2 flex flex-col gap-6 relative"
+          >
+            <img
+              src="./assets/images/Image2.png"
+              alt=""
+              class="absolute bottom-0 right-0"
+            />
+            <div class="flex gap-6">
+              <img
+                src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="rounded-t-lg w-20 h-20 object-cover object-top -mt-10"
+                alt=""
+              />
+              <div class="text-start">
+                <h2 class="font-bold text-sm">John Doe</h2>
+                <p class="text-xs text-gray-400">Project Manager</p>
+              </div>
+            </div>
+            <p class="text-start">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea esse
+              quidem voluptatem ab officiis dolorum neque soluta reprehenderit
+              vitae blanditiis?
+            </p>
+            <p class="text-custom-purple text-start">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- estimate section -->
+      <section class="py-28 bg-white w-full relative h-auto">
+        <img class="absolute top-0 h-full w-full object-cover object-bottom opacity-50" src="./assets/images/white_wooden_slats-wallpaper-1920x1080.jpg" alt="">
+      <div
+        class="container flex flex-col gap-16 justify-center items-center text-center"
+      >
+        <div class="z-20">
+          <p class="text-gray-500 font-semibold">
+            <i class="bi bi-shield-fill-check text-custom-purple"></i>
+            Get a Free Estimate
+          </p>
+          <h1 class="text-slate-900 text-4xl max-w-[32rem] font-bold text-wrap">
+            Get an Insurance Quote to Get Standard!
+          </h1>
+        </div>
+     </section>
+    <!-- scripts -->
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>

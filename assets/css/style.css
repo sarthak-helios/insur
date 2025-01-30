@@ -1,0 +1,96 @@
+* {
+  font-family: "Poppins", serif;
+  font-optical-sizing: auto;
+}
+
+.bg-custom-dark {
+  background: #25253a;
+}
+
+.text-custom-dark {
+  color: #25253a;
+}
+
+.bg-custom-purple {
+  background: #6c6af1;
+}
+.border-custom-purple {
+  border-color: #6c6af1;
+}
+
+.bg-custom-purple2 {
+  background: #ceccfe;
+}
+
+.text-custom-purple {
+  color: #6c6af1;
+}
+
+.hero {
+  background-image: url("https://printawallpaper.com/wp-content/uploads/2020/08/White_Abstract_Triangles_dn.jpg");
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+.custom-shadow::after {
+  content: "";
+  border-bottom: 5.8rem solid white;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  height: 0;
+  min-width: 180%;
+  position: absolute;
+  bottom: 0;
+  right: -40%;
+}
+.custom-shadow::before {
+  content: "";
+  border-bottom: 7rem solid #ffffff58;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  height: 0;
+  min-width: 220%;
+  position: absolute;
+  bottom: 0;
+  right: -59%;
+}
+
+.slanted-edge {
+  --p: 70px; /* control the shape (can be percentage) */
+  height: 180px;
+  width: 100%;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0, 80% 0, calc(80% - var(--p)) 100%, 0 100%);
+  background: #ffffff21;
+  backdrop-filter: blur(20px);
+}
+.slanted-edge2 {
+  --p: 70px; /* control the shape (can be percentage) */
+  height: 50%;
+  transform: translate(-50%, 50%);
+  width: 40%;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0, 88% 0, calc(100% - var(--p)) 100%, 0 100%);
+}
