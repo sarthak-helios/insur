@@ -81,7 +81,7 @@
           >
             <div class="flex gap-8">
               <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a
-              ><a href="#testimonials">Testimonials</a><a href="">Team</a><a href="">Blog</a>
+              ><a href="#testimonials">Testimonials</a><a href="#team">Team</a><a href="#articles">Blog</a>
             </div>
             <div class="flex gap-6 text-lg -mr-16 z-10">
               <i class="bi bi-search"></i><i class="bi bi-cart3"></i>
@@ -629,7 +629,7 @@
       </div>
     </section>
     <!-- estimate section -->
-      <section class="py-28 bg-white w-full relative h-auto">
+    <section class="py-28 bg-white w-full relative h-auto">
         <img class="absolute top-0 h-full w-full object-cover object-bottom opacity-50" src="./assets/images/white_wooden_slats-wallpaper-1920x1080.jpg" alt="">
       <div
         class="container flex flex-col gap-16 justify-center items-center text-center"
@@ -643,9 +643,146 @@
             Get an Insurance Quote to Get Standard!
           </h1>
         </div>
-     </section>
-     <!-- footer section -->
-      <footer class="bg-custom-dark relative overflow-hidden">
+        <div class="z-40 w-full">
+          <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 ">
+              <li class="">
+                  <a href="#" aria-current="page" class="inline-block p-4 text-white bg-custom-purple rounded-tr-3xl">• Car Insurance</a>
+              </li>
+              <li class="">
+                  <a href="#" class="inline-block p-4 rounded-tr-3xl bg-white">• Life Insurance</a>
+              </li>
+              <li class="">
+                  <a href="#" class="inline-block p-4 rounded-tr-3xl bg-white">• Home Insurance</a>
+              </li>
+              <li class="">
+                  <a href="#" class="inline-block p-4 rounded-tr-3xl bg-white">• Health Insurance</a>
+              </li>
+          </ul>
+          <div class="p-12 bg-white max-h-fit w-full flex gap-8 rounded-tr-2xl rounded-br-4xl">
+            <img src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-1/2 rounded-r-2xl h-78">
+            <form class="w-1/2 flex flex-col px-4 gap-6">
+              <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Full Name" required />
+              <input type="email" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Email Address" required />
+              <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                <option selected>Subject Type of Insurance</option>
+                <option value="US">Bike Insurance</option>
+                <option value="CA">Health Insurance</option>
+                <option value="FR">Car Insurance</option>
+                <option value="DE">Home Insurance</option>
+              </select>
+              <div class="flex justify-between -mb-4">
+                <label for="range" class="font-semibold">Limits of Balance:</label>
+                <p>$4000</p>
+              </div>
+	            <input class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-violet-500 [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-transparent [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[20px] [&::-webkit-slider-thumb]:w-[20px] [&::-webkit-slider-thumb]:rounded-md [&::-webkit-slider-thumb]:bg-purple-500" type="range" min="0" max="100" value="60" step="10" />
+              
+              <button
+                class="focus:outline-none z-10 text-white bg-custom-purple hover:bg-gray-300 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-8 py-3 mb-2 w-fit h-fit cursor-pointer"
+              >
+                Get A Quote Now
+              </button>
+            </form>
+          </div>
+        </div>
+    </section>
+    <!-- Team section -->
+    <section id="team" class="py-28 bg-white w-full relative h-auto">
+        <img class="absolute bottom-0  w-full  object-bottom " src="./assets/images/Image+Background.png" alt="">
+      <div
+        class="container flex flex-col gap-16 justify-center items-center text-center"
+      >
+        <div class="z-20">
+          <p class="text-gray-500 font-semibold">
+            <i class="bi bi-shield-fill-check text-custom-purple"></i>
+            Our Team Members
+          </p>
+          <h1 class="text-slate-900 text-4xl max-w-[30rem] font-bold text-wrap">
+            Meet our Experienced Team People
+          </h1>
+        </div>
+        <div class="flex justify-between w-full z-20">
+          <div class="bg-white max-w-92 min-w-92 rounded-2xl relative overflow-hidden">
+            <img src="https://images.pexels.com/photos/842548/pexels-photo-842548.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="h-92 w-full object-cover">
+            <i class="p-3 py-2 bi bi-share-fill absolute top-5 left-5 bg-white rounded-lg cursor-pointer"></i>
+            <h2 class="w-full py-8 text-center font-semibold text-xl">Mike Hardson<p class="text-sm text-gray-500 font-normal">Designer</p></h2>
+          </div>
+          <div class="bg-white max-w-92 min-w-92 rounded-2xl relative overflow-hidden">
+            <img src="https://images.pexels.com/photos/1036627/pexels-photo-1036627.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="h-92 w-full object-cover">
+            <i class="p-3 py-2 bi bi-share-fill absolute top-5 left-5 bg-white rounded-lg cursor-pointer"></i>
+            <h2 class="w-full py-8 text-center font-semibold text-xl">Jenny Wilson<p class="text-sm text-gray-500 font-normal">Manager</p></h2>
+          </div>
+          <div class="bg-white max-w-92 min-w-92 rounded-2xl relative overflow-hidden">
+            <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="h-92 w-full object-cover">
+            <i class="p-3 py-2 bi bi-share-fill absolute top-5 left-5 bg-white rounded-lg cursor-pointer"></i>
+            <h2 class="w-full py-8 text-center font-semibold text-xl">Robert Fox<p class="text-sm text-gray-500 font-normal">Director</p></h2>
+          </div>
+        </div>
+    </section>
+    <!-- Article Section -->
+    <section id="articles" class="py-28 bg-gray-200 w-full relative h-auto">
+      <div
+        class="container flex flex-col gap-16 justify-center items-center text-center"
+      >
+        <div class="z-20">
+          <p class="text-gray-500 font-semibold">
+            <i class="bi bi-shield-fill-check text-custom-purple"></i>
+            Article
+          </p>
+          <h1 class="text-slate-900 text-4xl max-w-[32rem] font-bold text-wrap">
+            Latest News & Articles from the Blog Posts
+          </h1>
+        </div>
+        <div class="flex justify-between w-full">
+          <div class="max-w-92 min-w-92 rounded-2xl relative z-10">
+            <img src="https://images.pexels.com/photos/702139/pexels-photo-702139.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="h-92 w-full object-cover -mb-16 z-0 rounded-2xl">
+            <div class="w-11/12 bg-white rounded-br-xl relative z-20">
+              <div class="p-3 px-4 bg-white absolute top-0 rounded-full -translate-y-1/2 right-0 text-xl text-center font-semibold">20
+                <p class="text-gray-400 text-xs -mt-1">
+                  JAN
+                </p>
+              </div>
+              <div class="text-start p-4 bg-white">
+                <p class="text-sm"><i class="text-custom-purple bi bi-chat-fill text-lg"></i> 2 Comments</p>
+                <h2 class="w-full h-full font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              </div>
+              <div class="p-4 flex justify-between bg-custom-purple3 rounded-br-xl text-white text-sm cursor-pointer">Read More <i class="bi bi-arrow-right"></i></div>
+            </div>
+          </div>
+          <div class="max-w-92 min-w-92 rounded-2xl relative z-10">
+            <img src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="h-92 w-full object-cover -mb-16 z-0 rounded-2xl">
+            <div class="w-11/12 bg-white rounded-br-xl relative z-20">
+              <div class="p-3 px-4 bg-white absolute top-0 rounded-full -translate-y-1/2 right-0 text-xl text-center font-semibold">20
+                <p class="text-gray-400 text-xs -mt-1">
+                  JAN
+                </p>
+              </div>
+              <div class="text-start p-4 bg-white">
+                <p class="text-sm"><i class="text-custom-purple bi bi-chat-fill text-lg"></i> 2 Comments</p>
+                <h2 class="w-full h-full font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              </div>
+              <div class="p-4 flex justify-between bg-custom-purple3 rounded-br-xl text-white text-sm cursor-pointer">Read More <i class="bi bi-arrow-right"></i></div>
+            </div>
+          </div>
+          <div class="max-w-92 min-w-92 rounded-2xl relative z-10">
+            <img src="https://images.pexels.com/photos/842548/pexels-photo-842548.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="h-92 w-full object-cover -mb-16 z-0 rounded-2xl">
+            <div class="w-11/12 bg-white rounded-br-xl relative z-20">
+              <div class="p-3 px-4 bg-white absolute top-0 rounded-full -translate-y-1/2 right-0 text-xl text-center font-semibold">20
+                <p class="text-gray-400 text-xs -mt-1">
+                  JAN
+                </p>
+              </div>
+              <div class="text-start p-4 bg-white">
+                <p class="text-sm"><i class="text-custom-purple bi bi-chat-fill text-lg"></i> 2 Comments</p>
+                <h2 class="w-full h-full font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              </div>
+              <div class="p-4 flex justify-between bg-custom-purple3 rounded-br-xl text-white text-sm cursor-pointer">Read More <i class="bi bi-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-custom-dark relative overflow-hidden">
         <img src="./assets/images/Image.png" alt="" class="absolute top-15 h-5/6 w-auto right-10 z-10">
         <img src="./assets/images/Image3.png" alt="" class="absolute top-0 h-11/12 w-auto left-0 z-10">
         <div class="container flex gap-16 !py-20 items-center">
@@ -724,7 +861,7 @@
         <div class="bg-custom-dark2 text-gray-400 text-sm w-full p-8 text-center">
           &copy; All Copyright 2025 by insur.com
         </div>
-      </footer>
+    </footer>
 
     <button onclick="scrollTopfn()" class="bg-custom-purple fixed bottom-10 right-10 text-3xl text-white rounded-full px-3 py-2 cursor-pointer z-[1000]"><i class="bi bi-caret-up-fill"></i></button>
     <!-- scripts -->
