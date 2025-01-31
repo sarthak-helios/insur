@@ -167,3 +167,7 @@ window.addEventListener("load", function () {
     onResize();
   });
 });
+
+function scrollTopfn() {
+  window.scrollTo(0, 0);
+}
