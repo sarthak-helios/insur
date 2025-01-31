@@ -136,27 +136,29 @@
             </button>
           </div>
         <!-- images div -->
-        <div id="wrapper" onmouseover="pauseSlide()" ondragleave="startSlide()" class="relative flex flex-row max-w-1/2 h-[90vh] overflow-hidden scroll-smooth">
+        <div id="wrapper" onmouseenter="pauseSlide()" onmouseleave="startSlide()" class="relative flex flex-row max-w-1/2 h-[90vh] overflow-hidden scroll-smooth snap-x">
           <img
             src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
-            class="w-full h-full object-cover object-bottom "
+            class="w-full h-full object-cover object-bottom snap-center"
           />
           <img
             src="https://images.pexels.com/photos/7989076/pexels-photo-7989076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
-            class="w-full h-full object-cover object-bottom "
+            class="w-full h-full object-cover object-bottom snap-center"
           />
           <img
             src="https://images.pexels.com/photos/6803527/pexels-photo-6803527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
-            class="w-full h-full object-cover object-bottom "
+            class="w-full h-full object-cover object-bottom snap-center"
           />
         </div>
         <img
           src="./assets/images/Image4.png"
           alt=""
           class="absolute -bottom-8 right-0"
+          onmouseenter="pauseSlide()"
+          onmouseleave="startSlide()"
         />
       </div>
     </section>
