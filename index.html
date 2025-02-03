@@ -108,7 +108,7 @@
     <!-- hero section -->
     <section id="home">
       <div class="flex relative items-center gap-8 hero max-h-[50%]">
-          <div class="flex relative pl-62 md:pl-96 flex-col gap-8 h-full w-1/2">
+          <div class="flex relative pl-62 2xl:pl-96 flex-col gap-8 h-full w-1/2">
             <h1 class="text-slate-800 text-6xl font-bold">
               Life More Relaxed with Smart Insurance
             </h1>
@@ -123,11 +123,11 @@
           </button>
           <img
             src="./assets/images/slider-8-shape-1.png.png"
-            class="h-48 w-48 absolute -bottom-40 right-0"
+            class="h-24 w-24 2xl:h-48 2xl:w-48 absolute -bottom-10 2xl:-bottom-40 right-0"
             alt=""
             />
           </div>
-          <div class="absolute flex flex-col gap-8 top-1/3 left-50 text-4xl">
+          <div class="absolute flex flex-col gap-8 top-1/3 left-28 2xl:left-48 text-4xl">
             <button class="p-3 border-2 border-slate-900 rounded-full hover:text-white hover:bg-slate-900 cursor-pointer" onclick="left()">
               <i class="bi bi-caret-left"></i>
             </button>
@@ -199,9 +199,9 @@
     </section>
     <!-- About section -->
     <section class="min-h-svh bg-white flex justify-center items-center" id="about">
-      <div class="container flex gap-22 justify-center items-center !mt-16">
+      <div class="container flex gap-22 justify-center items-center !mt-16 !py-16">
         <!-- left images section -->
-        <div class="relative rotate-10 mt-8 w-1/2">
+        <div class="relative rotate-10 w-1/2">
           <img
             src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="w-[30rem] h-[30rem] rounded-2xl object-cover object-center"
@@ -484,7 +484,7 @@
     </section>
     <!-- why choose us section -->
     <section class="bg-gray-800 py-28 relative overflow-hidden" id="canvasP">
-      <canvas id="canvas" class="absolute w-full top-0 left-0 opacity-10 z-0">
+      <canvas id="canvas" class="absolute w-auto h-full top-0 left-0 opacity-10 z-0">
         Canvas not supported</canvas
       >
       <div class="flex container justify-between items-center">
@@ -674,9 +674,9 @@
               </select>
               <div class="flex justify-between -mb-4">
                 <label for="range" class="font-semibold">Limits of Balance:</label>
-                <p>$4000</p>
+                <p id="quoteAmount">$4000</p>
               </div>
-	            <input class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-violet-500 [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-transparent [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[20px] [&::-webkit-slider-thumb]:w-[20px] [&::-webkit-slider-thumb]:rounded-md [&::-webkit-slider-thumb]:bg-purple-500" type="range" min="0" max="100" value="60" step="10" />
+	            <input class="w-full h-2 rounded-lg cursor-pointer accent-violet-500" onchange="changeSlider(event)" id="balanceSlider" type="range" min="0" max="100" value="40" step="10" />
               
               <button
                 class="focus:outline-none z-10 text-white bg-custom-purple hover:bg-gray-300 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-8 py-3 mb-2 w-fit h-fit cursor-pointer"
@@ -784,7 +784,7 @@
     </section>
 
     <!-- footer section -->
-    <footer class="bg-custom-dark relative overflow-hidden">
+    <footer class="bg-custom-dark relative overflow-hidden" id="footer">
         <img src="./assets/images/Image.png" alt="" class="absolute top-15 h-5/6 w-auto right-10 z-10">
         <img src="./assets/images/Image3.png" alt="" class="absolute top-0 h-11/12 w-auto left-0 z-10">
         <div class="container flex gap-16 !py-20 items-center">
@@ -792,21 +792,21 @@
             <p class="font-semibold text-white text-lg">About</p>
             <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi officiis impedit cumque eum cupiditate ipsa tempore ut id nemo nobis.</p>
             <div class="relative">
-              <input type="search" id="search-dropdown" class="block p-5 w-full z-20 text-sm text-gray-200 bg-gray-50/25 rounded-md rounded-s-gray-100 rounded-s-2 focus:ring-blue-500 focus:border-blue-500 " placeholder="Email Address" required />
+              <input type="search" id="search-dropdown" class="block p-5 w-full backdrop-blur-[0.12rem] z-20 text-sm text-gray-200 bg-gray-50/25 rounded-md rounded-s-gray-100 rounded-s-2 focus:ring-blue-500 focus:border-blue-500 " placeholder="Email Address" required />
               <button class="top-0 absolute end-0 p-5 pb-4 h-full text-sm font-medium text-white bg-custom-purple rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer"><i class="bi bi-arrow-up-right"></i></button>
             </div>
             <!-- social handles -->
             <div class="flex gap-4">
-              <button class="p-2.5 py-1.5 text-center h-full font-medium text-xl text-white bg-white/25 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer">
+              <button class="p-2.5 py-1.5 text-center backdrop-blur-[0.12rem] h-full font-medium text-xl text-white bg-white/25 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer">
                 <i class="bi bi-facebook"></i>
               </button>
-              <button class="p-2.5 py-1.5 text-center h-full font-medium text-xl text-white bg-white/25 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer">
+              <button class="p-2.5 py-1.5 text-center backdrop-blur-[0.12rem] h-full font-medium text-xl text-white bg-white/25 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer">
                 <i class="bi bi-twitter"></i>
               </button>
-              <button class="p-2.5 py-1.5 text-center h-full font-medium text-xl text-white bg-white/25 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer">
+              <button class="p-2.5 py-1.5 text-center backdrop-blur-[0.12rem] h-full font-medium text-xl text-white bg-white/25 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer">
                 <i class="bi bi-pinterest"></i>
               </button>
-              <button class="p-2.5 py-1.5 text-center h-full font-medium text-xl text-white bg-white/25 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer">
+              <button class="p-2.5 py-1.5 text-center backdrop-blur-[0.12rem] h-full font-medium text-xl text-white bg-white/25 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 cursor-pointer">
                 <i class="bi bi-instagram"></i>
               </button>
             </div>
@@ -844,11 +844,11 @@
           </div>
           <div class="flex flex-col gap-5 text-gray-400 w-fit text-nowrap z-20">
             <h2 class="text-white font-semibold text-lg">Explore</h2>
-            <p>About</p>
-            <p>Insurance</p>
-            <p>Latest Portfolio</p>
-            <p>Our FAQs</p>
-            <p>Get in Touch</p>
+            <a href="#about">About</a>
+            <a href="#services">Insurance</a>
+            <a href="#articles">Latest Portfolio</a>
+            <a href="#">Our FAQs</a>
+            <a href="#footer">Get in Touch</a>
           </div>
           <div class="flex flex-col gap-5 w-full z-20">
             <h2 class="text-white font-semibold text-lg">Gallery</h2>
@@ -865,8 +865,9 @@
         </div>
     </footer>
 
-    <button onclick="scrollTopfn()" class="bg-custom-purple fixed bottom-10 right-10 text-3xl text-white rounded-full px-3 py-2 cursor-pointer z-[1000]"><i class="bi bi-caret-up-fill"></i></button>
+    <button id="STTBtn" onclick="scrollTopfn()" class="bg-custom-purple fixed bottom-10 right-10 text-3xl text-white rounded-full px-3 py-2 cursor-pointer z-[1000]  transition-opacity duration-500 opacity-0"><i class="bi bi-caret-up-fill"></i></button>
     <!-- scripts -->
+    <script src="./assets/scripts/rangeSlider.js"></script>
     <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/slider.js"></script>
   </body>

@@ -1,6 +1,10 @@
 "use strict";
+var sstBtn;
 window.addEventListener("load", function () {
   var canvas = document.getElementById("canvas");
+
+  sstBtn = document.getElementById("STTBtn");
+
   var canvasp = document.getElementById("canvasP");
 
   if (!canvas || !canvas.getContext) {
@@ -166,8 +170,23 @@ window.addEventListener("load", function () {
   window.addEventListener("resize", function () {
     onResize();
   });
+  if (window.scrollY > 200) {
+    sstBtn.style.opacity = 1;
+  } else {
+    sstBtn.style.opacity = 0;
+  }
 });
 
 function scrollTopfn() {
   window.scrollTo(0, 0);
 }
+
+window.addEventListener("scroll", function () {
+  try {
+    if (window.scrollY > 200) {
+      sstBtn.style.opacity = 1;
+    } else {
+      sstBtn.style.opacity = 0;
+    }
+  } catch (error) {}
+});
