@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   wrapper = document.querySelector("#wrapper");
   wrapper2 = document.querySelector("#wrapper2");
   progressBar = document.querySelector("#progressBar");
-  progressBar.style.width = "1%";
   startSlide();
 });
 
@@ -69,7 +68,7 @@ function moveServices(v) {
 }
 
 wrapper2.addEventListener("scroll", () => {
-  progressBar.style.width = `${
-    (wrapper2.scrollLeft / (wrapper2.clientWidth * 2)) * 100 * 3
+  progressBar.style.marginLeft = `${
+    (wrapper2.scrollLeft / (wrapper2.clientWidth * 2)) * 100 * 2
   }%`;
 });
