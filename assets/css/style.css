@@ -84,7 +84,7 @@
 }
 
 .slanted-edge {
-  --p: 70px; /* control the shape (can be percentage) */
+  --p: 70px;
   height: 180px;
   width: 100%;
   aspect-ratio: 1;
@@ -93,7 +93,7 @@
   backdrop-filter: blur(20px);
 }
 .slanted-edge2 {
-  --p: 70px; /* control the shape (can be percentage) */
+  --p: 70px;
   height: 50%;
   transform: translate(-50%, 50%);
   width: 40%;
@@ -102,18 +102,13 @@
 }
 
 input[type="range"] {
-  /* removing default appearance */
   -webkit-appearance: none;
   appearance: none;
-  /* creating a custom design */
   width: 100%;
   cursor: pointer;
   outline: none;
-  border-radius: 15px;
-  /*  overflow: hidden;  remove this line*/
-
-  /* New additions */
-  height: 6px;
+  border-radius: 5px;
+  height: 10px;
   background: #ccc;
 }
 
@@ -123,10 +118,10 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   /* creating a custom design */
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   background-color: #18182a;
-  border-radius: 15%;
+  border-radius: 30%;
   border: none;
 
   /* box-shadow: -407px 0 0 400px #f50; emove this line */
@@ -135,10 +130,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Thumb: Firefox */
 input[type="range"]::-moz-range-thumb {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   background-color: #18182a;
-  border-radius: 15%;
+  border-radius: 30%;
   border: none;
 
   /* box-shadow: -407px 0 0 400px #f50; emove this line */
