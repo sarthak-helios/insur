@@ -33,7 +33,7 @@
 }
 
 .hero {
-  background-image: url("https://printawallpaper.com/wp-content/uploads/2020/08/White_Abstract_Triangles_dn.jpg");
+  background-image: url("../images/Image23.png");
   background-position: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,7 +84,7 @@
 }
 
 .slanted-edge {
-  --p: 70px;
+  --p: 75px;
   height: 180px;
   width: 100%;
   aspect-ratio: 1;

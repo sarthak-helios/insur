@@ -114,10 +114,10 @@
       </nav>
     </header>
     <!-- hero section -->
-    <section class="hero relative" id="home">
+    <section class="hero bg-white relative" id="home">
       <div class="flex items-center gap-8  h-[88vh] container ">
           <div class="flex relative flex-col justify-center gap-8 h-full w-1/2">
-            <h1 class="text-slate-800 text-6xl font-bold">
+            <h1 class="text-slate-800 text-6xl font-semibold">
               Life More 
               <p></p>
               Relaxed with 
@@ -139,12 +139,12 @@
               alt=""
             />
           </div>
-          <div class="absolute flex flex-col gap-8 top-1/2 -translate-y-1/2 left-8 2xl:left-28 text-4xl">
-            <button class="p-3 border-2 border-slate-900 rounded-full hover:text-white hover:bg-slate-900 cursor-pointer transition duration-300" onclick="left()">
-              <i class="bi bi-caret-left"></i>
+          <div class="absolute flex flex-col gap-4 top-1/2 -translate-y-1/2 left-8 2xl:left-28 text-4xl">
+            <button class="p-0 rounded-full hover:bg-gray-200 cursor-pointer transition duration-300" onclick="left()">
+              <img src="./assets/images/Border(1).png" alt="">
             </button>
-            <button class="p-3 border-2 border-slate-900 rounded-full hover:text-white hover:bg-slate-900 cursor-pointer transition duration-300" onclick="right()">
-              <i class="bi bi-caret-right"></i>
+            <button class="p-0 rounded-full hover:bg-gray-200 cursor-pointer transition duration-300" onclick="right()">
+              <img src="./assets/images/Border.png" alt="">
             </button>
           </div>
         <!-- images div -->
@@ -175,12 +175,12 @@
       </div>
     </section>
     <!-- services show section -->
-    <section class="bg-custom-dark w-full h-[28rem] mt-2 pt-48">
+    <section class="bg-custom-dark w-full h-[28rem] mt-4 pt-48">
       <div class="container flex gap-6 justify-center items-center">
         <div
-          class="flex flex-col gap-6 w-1/3 bg-white border border-gray-300 p-10 text-custom-dark rounded-2xl shadow-lg"
+          class="flex flex-col gap-4 w-1/3 bg-white border border-gray-300 p-10 text-custom-dark rounded-2xl shadow-lg"
         >
-          <i class="bi bi-piggy-bank text-custom-purple text-6xl"></i>
+          <img src="./assets/images/Border(3).png" class="h-16 w-16" />
           <h2 class="text-2xl font-semibold">Save Your Money</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
@@ -188,9 +188,9 @@
           </p>
         </div>
         <div
-          class="flex flex-col z-20 gap-6 w-1/3 bg-[url('./assets/images/Image+Blur.png')] bg-contain p-10 text-white rounded-2xl scale-125 shadow-lg before:content-[''] before:bg-[#6c6af1dc] before:h-full before:w-full before:absolute before:bottom-0 before:left-0 before:-z-10 before:rounded-2xl"
+          class="flex flex-col z-20 gap-4 w-1/3 bg-[url('./assets/images/Image+Blur.png')] bg-contain p-10 text-white rounded-2xl scale-125 shadow-lg before:content-[''] before:bg-[#6c6af1dc] before:h-full before:w-full before:absolute before:bottom-0 before:left-0 before:-z-10 before:rounded-2xl"
         >
-          <i class="bi bi-coin text-6xl"></i>
+          <img src="./assets/images/Border(2).png" class="h-16 w-16" />
           <h2 class="text-2xl font-semibold">Get Free Quote</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nemo
@@ -198,9 +198,9 @@
           </p>
         </div>
         <div
-          class="flex flex-col gap-6 w-1/3 bg-white border border-gray-300 p-10 text-custom-dark rounded-2xl shadow-lg"
+          class="flex flex-col gap-4 w-1/3 bg-white border border-gray-300 p-10 text-custom-dark rounded-2xl shadow-lg"
         >
-          <i class="bi bi-bank text-6xl text-custom-purple"></i>
+          <img src="./assets/images/Border(4).png" class="h-16 w-16" />
           <h2 class="text-2xl font-semibold">Fast & Reliable</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, esse
@@ -210,19 +210,19 @@
       </div>
     </section>
     <!-- About section -->
-    <section class="min-h-svh bg-white flex justify-center items-center" id="about">
-      <div class="container flex gap-22 justify-center items-center !mt-16 !py-16">
+    <section class="min-h-svh bg-white flex justify-center items-center py-40" id="about">
+      <div class="container flex gap-22 justify-center items-center !mt-28">
         <!-- left images section -->
-        <div class="relative rotate-10 w-3/5">
+        <div class="relative rotate-10 w-7/12">
           <img
             src="./assets/images/3e3fbda4a3b877163894ca63a36e5d3d.png"
-            class="w-[35rem] h-[35rem] rounded-2xl object-cover object-center"
+            class="w-10/12 h-[30rem] rounded-4xl object-cover object-center"
             alt=""
           />
           <img
             src="./assets/images/a2b346975c0297f992ba7ca88f2f6bc9.png"
             alt=""
-            class="w-[22rem] h-[22rem] rounded-2xl object-cover object-center absolute bottom-10 left-68"
+            class="w-[22rem] h-[22rem] rounded-4xl object-cover object-center absolute bottom-10 left-68"
           />
           <div
             class="bg-custom-purple rounded-2xl text-center p-16 text-white text-4xl font-semibold w-62 mt-6"
@@ -231,7 +231,7 @@
           </div>
         </div>
         <!-- right side details section -->
-        <div class="w-2/5 flex flex-col gap-4">
+        <div class="w-5/12 flex flex-col gap-4">
           <p class="text-gray-500 font-semibold">
             <i class="bi bi-shield-fill-check text-custom-purple"></i> About Us
           </p>
@@ -290,7 +290,7 @@
     </section>
     <!-- Services section -->
     <section id="services"
-      class="bg-[url('https://static.vecteezy.com/system/resources/previews/006/852/762/non_2x/white-paper-circles-with-shadows-on-white-background-abstract-template-for-business-presentation-with-note-spaces-free-vector.jpg')] before:content-[''] before:h-full before:w-full before:absolute before:top-0 before:left-0 before:bg-white/75 relative w-full pt-28 h-auto bg-center bg-no-repeat bg-cover flex items-center mb-36"
+      class="bg-[url('./assets/images/8086654c6b420a5b52b960b4664c9ad5.png')] relative w-full pt-28 h-auto bg-center bg-no-repeat bg-cover flex items-center mb-36"
     >
       <div class="flex flex-col h-auto gap-8 container">
         <!-- heading text -->
@@ -307,14 +307,14 @@
           <!-- buttons group -->
           <div class="z-20">
             <button
-              class="text-3xl p-3 pb-2 bg-white text-align-bottom rounded-full cursor-pointer hover:bg-slate-900 hover:text-gray-300" onclick="moveServices(0)"
+              class="p-3 bg-white rounded-full cursor-pointer hover:invert transition duration-300" onclick="moveServices(0)"
             >
-              <i class="bi bi-caret-left"></i>
+              <img src="./assets/images/Symbol(1).png" alt="" class="w-5 h-5 object-contain" />
             </button>
             <button
-              class="text-3xl p-3 pb-2 bg-white text-align-bottom rounded-full cursor-pointer hover:bg-slate-900 hover:text-gray-300" onclick="moveServices(1)"
+              class="p-3 bg-white rounded-full cursor-pointer hover:invert transition duration-300" onclick="moveServices(1)"
             >
-              <i class="bi bi-caret-right"></i>
+              <img src="./assets/images/Symbol.png" alt="" class="w-5 h-5 object-contain" />
             </button>
           </div>
         </div>
@@ -496,9 +496,10 @@
     </section>
     <!-- why choose us section -->
     <section class="bg-gray-800 py-28 relative overflow-hidden" id="canvasP">
-      <canvas id="canvas" class="absolute w-auto h-full top-0 left-0 opacity-10 z-0">
+      <!-- <canvas id="canvas" class="absolute w-auto h-full top-0 left-0 opacity-10 z-0">
         Canvas not supported</canvas
-      >
+      > -->
+        <img class="absolute w-auto h-full top-0 left-0 z-0" src="./assets/images/7e2786c79b4ddcddff1ec54296fe0e3b.jpg" alt="">
       <div class="flex container justify-between items-center">
         <div class="w-1/2 flex flex-col gap-8">
           <div class="z-20">
@@ -533,9 +534,9 @@
               </p>
             </div>
             <img
-              src="https://images.pexels.com/photos/2566581/pexels-photo-2566581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="./assets/images/63581a39ac667c35464674e652b18b52.png"
               alt=""
-              class="absolute h-full top-0 -right-1/6 object-cover object-center rounded-2xl slanted-edge2 z-240"
+              class="absolute h-3/5 top-1/2 -translate-y-1/2 -right-1/7 -translate-x-1/2 object-cover object-center z-240"
             />
           </div>
           <div class="flex items-center gap-6">
@@ -550,18 +551,19 @@
             </p>
           </div>
         </div>
+        <img class="absolute bottom-0 right-1/2 translate-x-2/3" src="./assets/images/492c355e2b46190ac3f79bd25ba0145f.png" alt="">
         <!-- image banner -->
         <div class="w-1/2 z-20">
           <img
-            src="./assets/images/why-choose-seven-1.jpg.png"
+            src="./assets/images/4ac4f514115c0fa3a369d6bdf225cd28.png"
             alt=""
-            class="absolute top-0 right-0 w-1/2 min-h-full object-cover"
+            class="absolute top-0 right-0 w-1/2 min-h-full object-cover object-center"
           />
         </div>
       </div>
     </section>
     <!-- Testimonials section -->
-    <section id="testimonials" class="py-28 bg-gray-200">
+    <section id="testimonials" class="py-28 bg-gray-50">
       <div
         class="container flex flex-col gap-16 justify-center items-center text-center"
       >
@@ -576,7 +578,7 @@
         </div>
         <div class="flex justify-between gap-8">
           <div
-            class="p-8 pt-4 rounded-3xl bg-white shadow-xl max-w-1/2 flex flex-col gap-6 relative"
+            class="p-8 pt-4 rounded-3xl bg-white shadow-2xl max-w-1/2 flex flex-col gap-6 relative"
           >
             <img
               src="./assets/images/Image2.png"
@@ -608,7 +610,7 @@
             </p>
           </div>
           <div
-            class="p-8 pt-4 rounded-3xl bg-white shadow-xl max-w-1/2 flex flex-col gap-6 relative"
+            class="p-8 pt-4 rounded-3xl bg-white shadow-2xl max-w-1/2 flex flex-col gap-6 relative"
           >
             <img
               src="./assets/images/Image2.png"
@@ -643,8 +645,9 @@
       </div>
     </section>
     <!-- estimate section -->
-    <section class="py-28 bg-white w-full relative h-auto">
-        <img class="absolute top-0 h-full w-full object-cover object-bottom opacity-50" src="./assets/images/white_wooden_slats-wallpaper-1920x1080.jpg" alt="">
+    <section class="py-28 bg-gray-100 w-full relative h-auto">
+        <img class="absolute top-0 left-0 h-full object-cover object-bottom opacity-50" src="./assets/images/17be5a1aa41aefa44039b3d9c289d1bb.png" alt="">
+        <img class="absolute top-0 right-0 h-full object-cover object-bottom opacity-50" src="./assets/images/52b061b9ba830ccec8a0c9056dcc3776.png" alt="">
       <div
         class="container flex flex-col gap-16 justify-center items-center text-center"
       >
